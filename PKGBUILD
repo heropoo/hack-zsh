@@ -24,7 +24,7 @@ package() {
 	cp -f "${srcdir}/keephack" "${pkgdir}/etc/zsh/"
 
 	mkdir -p "${pkgdir}/etc/skel/"
-	rm -f "${pkgdir}/etc/skel/zshrc"
+	rm -f "${pkgdir}/etc/skel/.zshrc"
 	cp -f "${srcdir}/zshrc" "${pkgdir}/etc/skel/.zshrc"
 
 	mkdir -m 700 -p "${pkgdir}/${HOME}/"
