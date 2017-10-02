@@ -1,0 +1,13 @@
+pre_install(){
+	rm -f /etc/zsh/zshrc
+	rm -f /etc/zsh/keephack
+	rm -f /etc/skel/.zshrc
+	rm -f $HOME/.zshrc
+}
+
+pre_upgrade(){
+	rm -f /etc/zsh/zshrc
+	rm -f /etc/zsh/keephack
+	rm -f /etc/skel/.zshrc
+	rm -f $HOME/.zshrc	
+}
